@@ -27,10 +27,7 @@ int main()
         for( long int column = 0; column <= level; column++ )
         {
             if( level == column ) tab[ column ][ level ] = 1;
-            if ( level == 3) {
-                cout << "1"<<endl<<"1"<<" "<<"2 "<< "1";
-            }
-
+            
             if( column == 0 ) tab[ column ][ level ] = 1;
 
             tab[ level ][ column ] = tab[ level - 1 ][ column - 1 ] + tab[ level - 1 ][ column ];
